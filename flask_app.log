@@ -1,12 +1,1 @@
- * Serving Flask app 'main'
- * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://localhost:5000
-Press CTRL+C to quit
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 547-326-139
- * Detected change in 'C:\\Users\\Ansh\\Desktop\\coding\\Chatverse\\main.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 547-326-139
+pythonw: can't open file 'C:\\Users\\Ansh\\Desktop\\coding\\Chatverse\\main.py': [Errno 2] No such file or directory

@@ -8,14 +8,14 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-REM Activate the virtual environment
-echo Activating the virtual environment...
-call C:\Users\Ansh\Desktop\coding\Chatverse\Scripts\activate.bat
-if %errorlevel% neq 0 (
-    echo Failed to activate virtual environment. Path not found or invalid.
-    pause
-    exit /b
-)
+#REM Activate the virtual environment
+#echo Activating the virtual environment...
+#call C:\Users\Ansh\Desktop\coding\Chatverse\Scripts\activate.bat
+#if %errorlevel% neq 0 (
+#    echo Failed to activate virtual environment. Path not found or invalid.
+#    pause
+#    exit /b
+#)
 
 REM Run your Flask app
 echo Running Flask app...
