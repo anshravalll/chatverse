@@ -18,40 +18,54 @@ To set up and run Chatverse, follow these steps:
 
 1. **Clone the Repository**: This step downloads the Chatverse code to your local machine.
 
-```bash
-git clone https://github.com/anshravalll/chatverse.git
-cd chatverse
-```
+    ```bash
+    git clone https://github.com/anshravalll/chatverse.git
+    cd chatverse
+    ```
 
 2. **Create a Virtual Environment**: Set up a Python virtual environment to isolate the project dependencies from other Python projects on your system.
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-```
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
 3. **Install Dependencies**: Install all the necessary Python packages required to run Chatverse. These are listed in the `requirements.txt` file.
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 4. **Run the Flask Server**: Start the Flask server using the provided batch file. This makes the API endpoints available for use.
 
-```bash
-run_flask.bat
-```
+    ```bash
+    run_flask.bat
+    ```
 
 5. **Close the Flask Server**: When you are done using Chatverse, you can stop the server by running the following batch file.
 
-```bash
-close_flask.bat
-```
+    ```bash
+    close_flask.bat
+    ```
 
 6. **Optional: Use the Streamlit UI**: If you prefer to interact with Chatverse through a graphical user interface, run the Streamlit application located in `src/ui.py`.
 
-```bash
-streamlit run src/ui.py
-```
+    ```bash
+    streamlit run src/ui.py
+    ```
 
-All API endpoints are defined in `main.py`, with the primary endpoint for invoking the chatbot being `/invoke_chat`. This README serves as the main documentation for setting up and using Chatverse. For more detailed usage instructions, please refer to the comments and examples provided in the codebase.
+All API endpoints are defined in `main.py`, with the primary endpoint for invoking the chatbot being `/invoke_chat`.
+
+## JSON Schema for `/invoke_chat` Endpoint
+
+The `/invoke_chat` endpoint accepts JSON payloads to manage conversations. Below is the schema for the JSON data that the endpoint can handle:
+
+```json
+{
+  "History": [
+    {
+      "User": "string",
+      "Bot": "string"
+    }
+  ]
+}
