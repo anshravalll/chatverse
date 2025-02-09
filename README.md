@@ -54,7 +54,7 @@ To set up and run Chatverse, follow these steps:
     streamlit run src/ui.py
     ```
 
-All API endpoints are defined in `main.py`, with the primary endpoint for invoking the chatbot being `/invoke_chat`.
+All API endpoints are defined in `main.py` using flask, with the primary endpoint for invoking the chatbot being `/invoke_chat`.
 
 ## JSON Schema for `/invoke_chat` Endpoint
 
